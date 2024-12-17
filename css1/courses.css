@@ -1,0 +1,301 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Default styles for mobile devices */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+
+/* Example of responsive text and images */
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Baloo Bhai"
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #393a78; */
+    /* color: #fff; */
+    /* padding: 20px 50px; */
+    background: #fff;
+       padding: 0px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         position: fixed; /* Fixes the header at the top */
+          width: 100%; /* Ensures the header takes up the full width */
+           top: 0; /* Positions the header at the very top of the page */ 
+           z-index: 3000; /* Keeps the header above other content */
+}
+
+/* Logo */
+.logo1  {
+    /* move the logo slightly left or right  */
+   /* move the logo slightly left or right  */
+  /* margin-right: 200px; */
+  /* when we move the logo to slightly down  */
+  margin-top: 1px; /* Move logo slightly down *
+  height:  40px; /* Adjust the size of the logo as needed */
+   /* margin-right: 155px;  */
+   /* Adds space between the logo and the menu */
+   margin-right: 10px; /* Move logo slightly left */
+    
+}
+
+/* for the contact us button settings */
+.contact-button 
+{background: #393a78; /* WhatsApp green color */ 
+ color: #ffffff;    
+ font-family: "Baloo Bhai";
+ padding: 10px 15px; 
+ border: none;
+  border-radius: 20px;
+  font-size: medium;
+   cursor: pointer; 
+   transition: background 0.3s,border-color 0.3s;  
+  } 
+   .contact-button:hover 
+   { 
+     background: #ffffff;
+     color: #393a78;
+     /* padding: 10px 15px; */
+      border: 2px solid #393a78; /* Adds the outside border */
+       border-radius: 20px;
+        cursor: pointer; 
+        transition: background 0.3s, border-color 0.3s;
+    }
+    .button-container
+     { position: fixed;
+        right: 100px; 
+        top: 8%;
+         transform: translateY(-50%); 
+         border-color: #393a78;
+       }
+     .menu-container 
+     { display: flex; 
+       align-items: center;
+       }
+      .menu 
+      { list-style: none;
+        margin: 0px; 
+        padding: 0px; 
+        display: flex; 
+        align-items: center;
+       }
+      .menu li
+       { margin: 10px 20px; /* Adds space between menu buttons */ }
+     .menu-button 
+     { text-decoration: none;
+        background: #fff; 
+       color: #393a78;
+        padding: 10px 15px; 
+        border: none; 
+        border-radius: 20px; 
+        cursor: pointer; 
+        transition: background 0.3s; 
+       } 
+     .menu-button:hover 
+     { 
+       background: #fff;
+       color: #393a78;
+       border: 2px solid #393a78; /* Adds the outside border */
+       border-radius: 20px; 
+       cursor: pointer; 
+       transition: background 0.3s;
+     }
+   .navbar
+    { background: #fff;
+      padding: 50px 20px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed; /* Fixes the header at the top */
+         width: 100%; /* Ensures the header takes up the full width */
+          top: 0; /* Positions the header at the very top of the page */ 
+          z-index: 3000; /* Keeps the header above other content */
+     }
+     .navigation-container 
+     { display: flex; 
+       background: #021222;
+       align-items: center; /* Align items in the center vertically */
+        justify-content: space-between; /* Space between the logo and menu items */ 
+     }
+     .content 
+     { text-align: center;
+      margin-top: 180px;
+      font-family: "Baloo Bhai";
+      font-size: 22px;
+      text-align: justify;
+      margin-left: 30px;
+      margin-right: 30px;
+    
+     } 
+     .image-gallery 
+     { display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+         gap: 20px;
+     } 
+     .image-item 
+     { flex: 1 1 calc(25% - 40px); /* Adjust the width based on gap size */ 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       margin: 10px;
+        padding: 10px;
+         text-align: center; 
+        } 
+        .image-item img
+         { max-width: 100%;
+           height: auto; 
+           display: block; 
+           margin: 0 auto; 
+          } 
+          .image-item p
+           { margin: 10px 0 0; 
+          }
+          .content h2
+           { 
+            text-align: center;
+            font-family: "Baloo Bhai";
+           font-size: 40px;
+           }
+
+    /* Responsive layout smaller screens */
+    @media screen and  (max-width: 708px) { 
+      .menu
+             {
+             /* margin-bottom: 25px; */
+              /* margin-left: 100px;  */
+              width: 150%;
+              height: 280px;
+              margin: 0 auto;
+              background: #686664;
+              flex-direction: column;
+              text-align: center;
+              max-width: 100%; 
+              /* margin: 0px 1px;  */
+              
+            }
+            .contact-button {
+              margin-left: 260px;
+              font-size: small;
+              /* margin-bottom: 0px 20px; */
+              margin-top: -30px;
+            }
+           
+        .menu li
+          
+          { margin: 0 0px; /* Adds space between menu buttons */
+           }
+          
+        
+       
+        .button-container
+        { margin-left: 100px;
+    
+          }
+    
+          .logo1
+           {
+            margin-top: 90px;
+            height: 50px;
+            width: 50px;
+            margin-right: 60%;
+            
+           }
+           .hero-right img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+          }
+           
+    }
+/*  for the lowest resulation  */
+    @media screen and  (max-width: 365px) { 
+      .menu
+             {
+             /* margin-bottom: 25px; */
+              /* margin-left: 100px;  */
+              /* width: 100%; height: 100px;  */
+              background: #686664;
+              flex-direction: column;
+              text-align: center;
+              max-width: 100%; 
+              /* margin: 0px 1px;  */
+              
+            }
+            .contact-button {
+              margin-left: 260px;
+              font-size: small;
+              /* margin-bottom: 0px 20px; */
+              margin-top: -30px;
+            }
+           
+        .menu li
+          
+          { margin: 0 0px; /* Adds space between menu buttons */
+           }
+          
+        
+       
+        .button-container
+        { margin-left: 100px;
+    
+          }
+    
+          .logo1
+           {
+            margin-top: 90px;
+            height: 55px;
+            width: 55px;
+            margin-left: 130%;
+            
+           }
+           .hero-right img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+          }
+           
+    }
